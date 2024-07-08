@@ -63,8 +63,18 @@ function initMap() {
     });
 }
 
+
 // Load the Google Maps API (replace YOUR_API_KEY with your actual API key)
 const script = document.createElement('script');
 script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbGKRtyWUl7S1hLQhz99CVPuQ7wztiDI&callback=initMap`;
 script.async = true;
 document.head.appendChild(script);
+
+function toggleVisibility(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
