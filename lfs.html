@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Land for Sale</h1>
+    </header>
+    
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="image1.jpg" alt="Land Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="image2.jpg" alt="Land Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="image3.jpg" alt="Land Image 3">
+            </div>
+        </div>
+    </section>
+    
+    <section class="description">
+        <h2>Property Description</h2>
+        <p>This is a placeholder for the property description. Add detailed information about the land here.</p>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="success-message" style="display:none; color: #556b2f; margin-top: 20px;">
+            Your message has been sent successfully!
+        </div>
+    </section>
+    
+    <section class="map">
+        <h2>Location</h2>
+        <div id="map"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
